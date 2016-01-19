@@ -27,7 +27,7 @@ IF ERRORLEVEL 1 (
     echo Please install nuget.exe from http://nuget.org
     goto err
 )
-nuget pack Microsoft.IoT.Lightning.Providers.nuspec -properties root=%ROOT% || goto err
+nuget pack Microsoft.IoT.Lightning.Providers.nuspec -properties root=%ROOT% -NoPackageAnalysis || goto err
 
 :end
 
