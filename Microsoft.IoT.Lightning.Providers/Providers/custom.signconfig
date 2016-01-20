@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This file is used by the build system to do a post-build code sign operation -->
+<SignConfigXML>
+  <!-- ARM Release sign job -->
+  <job platform="ARM" configuration="Release" dest="__RELBINPATH__\bin\signed\ARM" jobname="Provider WinRT ARM" approvers="artemz;torstens;marcusr">
+    <file src="__RELBINPATH__\ARM\Microsoft.IoT.Lightning.Providers.dll" signType="100040160" dest="__RELBINPATH__\bin\signed\ARM\Microsoft.IoT.Lightning.Providers.dll" />
+  </job>
+  <!-- x86 Release sign job -->
+  <job platform="x86" configuration="Release" dest="__RELBINPATH__\bin\signed\x86" jobname="Provider WinRT x86" approvers="artemz;torstens;marcusr">
+    <file src="__RELBINPATH__\x86\Microsoft.IoT.Lightning.Providers.dll" signType="100040160" dest="__RELBINPATH__\bin\signed\x86\Microsoft.IoT.Lightning.Providers.dll" />
+  </job>
+</SignConfigXML>
