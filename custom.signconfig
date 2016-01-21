@@ -3,10 +3,10 @@
 <SignConfigXML>
   <!-- ARM Release sign job -->
   <job platform="ARM" configuration="Release" dest="__RELBINPATH__\signed" jobname="Lightning Providers WinRT" approvers="artemz;torstens;marcusr">
-    <file src="__RELBINPATH__\Microsoft.IoT.Lightning.Providers.dll" signType="402" dest="__RELBINPATH__\signed\Microsoft.IoT.Lightning.Providers.dll" />
+    <file src="__RELBINPATH__\Microsoft.IoT.Lightning.Providers.dll" signType="Authenticode" dest="__RELBINPATH__\signed\Microsoft.IoT.Lightning.Providers.dll" />
   </job>
   <!-- x86 Release sign job -->
   <job platform="x86" configuration="Release" dest="__RELBINPATH__\signed" jobname="Lightning Providers WinRT" approvers="artemz;torstens;marcusr">
-    <file src="__RELBINPATH__\Microsoft.IoT.Lightning.Providers.dll" signType="402" dest="__RELBINPATH__\signed\Microsoft.IoT.Lightning.Providers.dll" />
+    <file src="__RELBINPATH__\Microsoft.IoT.Lightning.Providers.dll" signType="Authenticode" dest="__RELBINPATH__\signed\Microsoft.IoT.Lightning.Providers.dll" />
   </job>
 </SignConfigXML>
