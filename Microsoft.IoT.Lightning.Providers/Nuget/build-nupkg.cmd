@@ -19,7 +19,7 @@ if "%CLEAN%"=="1" goto end
 :: skip packaging step if requested
 if "%NOPACK%"=="1" goto end
 
-SET ROOT="..\Providers"
+SET ROOT="."
 
 echo Creating NuGet Package
 nuget help > NUL
